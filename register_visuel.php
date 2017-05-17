@@ -8,7 +8,18 @@
  */
 
 <?php
-require_once 'captch/captch.php';
+
+//initialisation session
+session_start();
+
+//inclusion
+require_once 'ppo.php';
+
+//ppo_load & create
+load_option->inclusion();
+load_option->basic();
+create_option->captcha();
+
 echo'
 <!DOCTYPE html>
 <html >
@@ -34,4 +45,5 @@ echo'
 				<input  name="rules" id="rules" required="1" type="checkbox"></input>
 				<input  type="submit" value="S\'enrengistrer"></form>
 	</body>';
+	
 ?>

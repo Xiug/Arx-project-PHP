@@ -8,11 +8,15 @@
  */
 
 <?php
-	require_once  'function_mysql.php';
-    $host       = "host";
-    $database   = "database";
-    $user       = "user";
-    $password   = "password";
 
-    $connect = mysqli_open($host, $user, $database, $password);
+//Inclussion 
+	require_once  'ppo_mysql.php';
+	
+    $host       = "host";  // Nom de l'hôte 
+    $database   = "database"; // Nom de base de données
+    $user       = "user"; // Utilisateur
+    $password   = "password"; // Mot de passe 
+
+    $connect = mysql_option->connect($host, $user, $database, $password);
+
 ?>
